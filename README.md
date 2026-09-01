@@ -101,7 +101,7 @@ node backend/ai/scoring.test.js
 
 Note: the root `package.json` contains some upstream/legacy scripts (for example `test:scoring` references `ai/scoring.test.js` at the repo root). For clarity and reproducibility, prefer running the test file via the explicit path shown above.
 
-## How I built it
+## How it was built
 - Implemented a small Express API with three AI-driven endpoints: `POST /generate` (project ideas), `POST /pathway` (structured learning plan), and `POST /guidance` (contextual help).
 - Built a resilient AI wrapper (`backend/ai/ai_agent.js`) that:
   - Sends structured system prompts to Google Gemini when a key is present.
@@ -112,10 +112,3 @@ Note: the root `package.json` contains some upstream/legacy scripts (for example
 Design choices / tradeoffs:
 - Deterministic fallback improves demoability (no secrets required) but is less creative than a live model — the README highlights both modes.
 - The API returns structured JSON only, simplifying client parsing and UI rendering.
-
-## Contributing & license
-Contributions welcome — open an issue describing the change and submit a PR. Add a `LICENSE` file (MIT recommended) if you want public reuse.
-
-## Contact
-Maintainer: Noor Pirz — (add email or preferred contact)
-GitHub: https://github.com/noorpirz/MatchLab-p
