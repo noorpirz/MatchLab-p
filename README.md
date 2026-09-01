@@ -2,9 +2,6 @@
 
 A student-focused matchmaking platform that suggests portfolio projects and step‑by‑step learning pathways. MatchLab combines a weighted scoring approach and AI-driven prompt templates to generate project ideas, learning pathways, and focused guidance.
 
-Demo: (insert live demo URL)  
-GIF: ![demo](path/to/demo.gif)
-
 ---
 
 ## Table of contents
@@ -54,11 +51,6 @@ How it fits together (runtime shape): the frontend calls the backend endpoints. 
 
 ## Run it locally
 1. Clone
-```bash
-git clone https://github.com/noorpirz/MatchLab-p.git
-cd MatchLab-p
-```
-
 2. Backend
 ```bash
 cd backend
@@ -67,7 +59,6 @@ npm install
 node server.js
 # or (if you prefer) use nodemon: npx nodemon server.js
 ```
-
 3. Frontend (separate terminal)
 ```bash
 cd frontend
