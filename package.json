@@ -1,0 +1,35 @@
+{
+  "name": "matchlab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node scripts/integration_test.js",
+    "test:scoring": "node ai/scoring.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surabhiv123456/MatchLab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/surabhiv123456/MatchLab/issues"
+  },
+  "homepage": "https://github.com/surabhiv123456/MatchLab#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@huggingface/inference": "^4.13.15",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "groq-sdk": "^1.1.1",
+    "openai": "^6.29.0"
+  }
+}
